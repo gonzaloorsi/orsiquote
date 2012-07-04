@@ -1,0 +1,9 @@
+<h1>#Orsiquotes</h1>
+<div id="q">
+<% @quotes.each do |q|%>
+<p>"<%= q.content %>" -<i><%= q.author %></i>
+</p>
+<% end %>
+</div>
+
+<%= link_to "Agregar Nueva Orsiquote", new_quote_path %>
