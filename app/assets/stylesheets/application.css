@@ -30,7 +30,7 @@ margin-top:45px;
 text-decoration:none;
 font-size:25px;
 color:white;
-background:grey;
+background:#2e6ab1;
 padding:10px;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
@@ -41,14 +41,38 @@ text-shadow:1px 1px 1px black;
 }
 
 .pagination{
-margin-top:40px;
+  margin-top:40px;
+  background:white;
+  cursor:default;
+  height:22px;
+  text-decoration:none;
 }
+
+.pagination a, span, em{
+  text-decoration:none;
+  border:1px solid #dddddd;
+  padding:0.2em;
+  color:#2e6ab1;
+
+}
+
+.current{
+  background:#2e6ab1;
+  color:white;
+}
+
+.disabled{
+  color:#999999
+}
+
+
+
 
 #form input{
 text-decoration:none;
 font-size:25px;
 color:white;
-background:grey;
+background:#2e6ab1;
 padding:10px;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
@@ -57,6 +81,6 @@ border-radius:5px;
 -webkit-text-shadow:1px 1px 1px black;
 text-shadow:1px 1px 1px black;
 }
-}
+
 
 
