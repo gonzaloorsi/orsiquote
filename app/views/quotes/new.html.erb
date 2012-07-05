@@ -1,5 +1,5 @@
 <h1>Agreg&aacute una nueva Orsiquote</h1>
-<div>
+<div id="form">
  <%= form_for(@quote) do |f| %>
  <% if @quote.errors.any? %>
  <% @quote.errors.full_messages.each do |m| %>
@@ -10,6 +10,6 @@
  <%= f.text_field :content %><br/>
  <%= f.label :author %> *<br/>
  <%= f.text_field :author %><br/>
- <%= f.submit "Agregar" %>
+ <p><%= f.submit "Agregar" %></p>
  <% end %>
 </div>
