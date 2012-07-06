@@ -82,5 +82,15 @@ border-radius:5px;
 text-shadow:1px 1px 1px black;
 }
 
-
+#quote_content{
+font-size:25px;
+color:white;
+background:#2e6ab1;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+-moz-text-shadow:1px 1px 1px black;
+-webkit-text-shadow:1px 1px 1px black;
+text-shadow:1px 1px 1px black;
+}
 

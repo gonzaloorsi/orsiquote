@@ -7,9 +7,9 @@
  <% end %>
  <% end %>
  <%= f.label :content %> *<br/>
- <%= f.text_field :content %><br/>
+ <%= f.text_area :content, :size => "35x10", placeholder: "Agrega tu quote aca sin comillas" %><br/>
  <%= f.label :author %> *<br/>
- <%= f.text_field :author %><br/>
+ <%= f.text_field :author, placeholder: "No te olvides de agregar el autor" %><br/>
  <p><%= f.submit "Agregar" %></p>
  <% end %>
 </div>
