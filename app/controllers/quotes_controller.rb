@@ -8,6 +8,7 @@ class QuotesController < ApplicationController
   end
 
   def create
+
     @quote=Quote.new(params[:quote])
       if @quote.save
         redirect_to quotes_path
@@ -27,4 +28,5 @@ class QuotesController < ApplicationController
 
   def destroy
   end
+
 end

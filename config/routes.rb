@@ -3,7 +3,7 @@ Orsiquotes::Application.routes.draw do
   resources :quotes
 
 
-
+  match '/auth/:provider/callback', to: 'quotes#new'
 
   
 
