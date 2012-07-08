@@ -2,7 +2,7 @@ Orsiquotes::Application.routes.draw do
   root to: "quotes#index"
   resources :quotes
   match 'auth/failure', to: redirect('/')
-  match '/auth/:provider/callback', to: 'sessions#create'
+  match '/auth/twitter/callback', to: 'sessions#create'
   match 'signout', to: 'sessions#destroy', as: 'signout'
   
 
