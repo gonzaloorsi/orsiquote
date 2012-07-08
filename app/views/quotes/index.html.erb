@@ -1,5 +1,3 @@
-
-<h1>#Orsiquotes</h1>
 <div id="q">
 <% @quotes.each do |q|%>
 <p>"<%= q.content %>" -<i><%= q.author %></i>
@@ -7,11 +5,14 @@
 <% end %>
 </div>
 
-<div class="agregar">
-<%= link_to "Ingresa a traves de Twitter y Agregar Nueva Orsiquote", "/auth/twitter" %>
-</div>
-
 
 <div>
 <p><%= will_paginate @quotes %></p>
 </div>
+<% if current_user %>
+<div class="agregar">
+<%= link_to "Agregá una nueva Orsiquote", "quotes/new" %>
+</div>
+<% end %>
+
+

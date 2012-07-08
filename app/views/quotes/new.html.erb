@@ -1,4 +1,4 @@
-<h1>Agreg&aacute una nueva Orsiquote</h1>
+
 <div id="form">
  <%= form_for(@quote) do |f| %>
  <% if @quote.errors.any? %>
@@ -7,7 +7,7 @@
  <% end %>
  <% end %>
  <%= f.label :content %> *<br/>
- <%= f.text_area :content, :size => "35x10", placeholder: "Agrega tu quote aca sin comillas" %><br/>
+ <%= f.text_area :content, :size => "35x5", placeholder: "Agregá tu quote sin comillas" %><br/>
  <%= f.label :author %> *<br/>
  <%= f.text_field :author, placeholder: "No te olvides de agregar el autor" %><br/>
  <p><%= f.submit "Agregar" %></p>

@@ -1,10 +1,9 @@
 Orsiquotes::Application.routes.draw do
   root to: "quotes#index"
   resources :quotes
-
-
-  match '/auth/:provider/callback', to: 'quotes#new'
-
+  match 'auth/failure', to: redirect('/')
+  match '/auth/:provider/callback', to: 'sessions#create'
+  match 'signout', to: 'sessions#destroy', as: 'signout'
   
 
   # The priority is based upon order of creation:
